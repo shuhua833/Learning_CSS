@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<style>
+   
+    .flexbox_container{
+display: flex;
+flex-wrap: wrap;
+background-color: yellow;
+margin-top: 50vh;
+align-items: center;
+flex-direction: column;
+/*justify content in center for column centers the content horizontally*/ 
+
+    }
+    .flexproperty{
+        
+        background-color: aqua;
+        width: 200px;
+        height: 100px;
+        border: 2px solid black;
+        margin-top: 50px;
+    }
+    .flex1{
+        display: flex;
+        min-height: 100px;
+        /* flex-shrink:0; the flexbox won't shrink*/
+    }
+    .flex2{
+        display: flex;
+        min-height: 100px;
+    }
+    .flex3
+    {
+        display: flex;
+        min-height: 100px;
+        /* flex-grow:1;  it will start growing from the given width, to override it , use flex basis
+           flex-basis:0; tells where to start growing from*/
+    }
+
+
+</style>
+<body>
+   <div class=" flexbox_container">
+    <div class="flexproperty flex1">I learned about flex today. It is very interesting.</div>
+    <div class="flexproperty flex2">Yesterday, I learnt about positions in CSS.</div>
+    <div class="flexproperty flex3">The day before yesterday, I learnt about display in CSS.</div>
+   </div>
+</body>
+</html>
